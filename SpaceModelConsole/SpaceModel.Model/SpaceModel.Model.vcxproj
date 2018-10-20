@@ -19,16 +19,42 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\3DEngine.h" />
+    <ClInclude Include="src\Core.h" />
+    <ClInclude Include="src\Core\Condition.h" />
+    <ClInclude Include="src\Core\Exception.h" />
+    <ClInclude Include="src\Extensions\StringExtensions.h" />
+    <ClInclude Include="src\Extensions\VectorExtensions.h" />
+    <ClInclude Include="src\Objects\BaseObject.h" />
+    <ClInclude Include="src\Objects\ComplexObject.h" />
+    <ClInclude Include="src\Objects\Primitive.h" />
+    <ClInclude Include="src\Objects\Primitives\Line.h" />
+    <ClInclude Include="src\Objects\Primitives\Point.h" />
+    <ClInclude Include="src\Objects\Primitives\Triangle.h" />
+    <ClInclude Include="src\Vectors\All.h" />
+    <ClInclude Include="src\Vectors\Vector2d.h" />
+    <ClInclude Include="src\Vectors\Vector3d.h" />
+    <ClInclude Include="src\Vectors\Vector4d.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\3DEngine.cpp" />
+    <ClCompile Include="src\Core.cpp" />
+    <ClCompile Include="src\Core\Condition.cpp" />
+    <ClCompile Include="src\Core\Exception.cpp" />
+    <ClCompile Include="src\Extensions\StringExtensions.cpp" />
+    <ClCompile Include="src\Objects\BaseObject.cpp" />
+    <ClCompile Include="src\Objects\ComplexObject.cpp" />
+    <ClCompile Include="src\Objects\Primitive.cpp" />
+    <ClCompile Include="src\Objects\Primitives\Line.cpp" />
+    <ClCompile Include="src\Objects\Primitives\Point.cpp" />
+    <ClCompile Include="src\Objects\Primitives\Triangle.cpp" />
+    <ClCompile Include="src\Vectors\Vector2d.cpp" />
+    <ClCompile Include="src\Vectors\Vector3d.cpp" />
+    <ClCompile Include="src\Vectors\Vector4d.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D0CFCCAE-786B-4607-98E8-615384324924}</ProjectGuid>
+    <ProjectGuid>{7E871446-3803-443F-A3BE-E3E470A70D04}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SpaceModelEngine</RootNamespace>
+    <RootNamespace>SpaceModelModel</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -78,15 +104,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

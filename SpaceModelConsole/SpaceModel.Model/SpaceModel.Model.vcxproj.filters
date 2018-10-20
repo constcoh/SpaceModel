@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\Core.h" />
+    <ClInclude Include="src\Vectors\Vector2d.h" />
+    <ClInclude Include="src\Vectors\Vector3d.h" />
+    <ClInclude Include="src\Vectors\Vector4d.h" />
+    <ClInclude Include="src\Vectors\All.h" />
+    <ClInclude Include="src\Objects\BaseObject.h" />
+    <ClInclude Include="src\Objects\Primitive.h" />
+    <ClInclude Include="src\Objects\ComplexObject.h" />
+    <ClInclude Include="src\Core\Condition.h" />
+    <ClInclude Include="src\Core\Exception.h" />
+    <ClInclude Include="src\Extensions\StringExtensions.h" />
+    <ClInclude Include="src\Extensions\VectorExtensions.h" />
+    <ClInclude Include="src\Objects\Primitives\Point.h" />
+    <ClInclude Include="src\Objects\Primitives\Line.h" />
+    <ClInclude Include="src\Objects\Primitives\Triangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Vectors\Vector2d.cpp" />
+    <ClCompile Include="src\Core.cpp" />
+    <ClCompile Include="src\Vectors\Vector3d.cpp" />
+    <ClCompile Include="src\Vectors\Vector4d.cpp" />
+    <ClCompile Include="src\Objects\BaseObject.cpp" />
+    <ClCompile Include="src\Objects\Primitive.cpp" />
+    <ClCompile Include="src\Objects\ComplexObject.cpp" />
+    <ClCompile Include="src\Core\Condition.cpp" />
+    <ClCompile Include="src\Core\Exception.cpp" />
+    <ClCompile Include="src\Extensions\StringExtensions.cpp" />
+    <ClCompile Include="src\Objects\Primitives\Point.cpp" />
+    <ClCompile Include="src\Objects\Primitives\Line.cpp" />
+    <ClCompile Include="src\Objects\Primitives\Triangle.cpp" />
+  </ItemGroup>
+</Project>

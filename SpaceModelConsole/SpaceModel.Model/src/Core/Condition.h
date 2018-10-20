@@ -1,0 +1,9 @@
+#pragma once
+
+#define nameof(variable) (#variable)
+
+class Condition {
+public :
+	static void IsNotNull(void * pObject);
+	static void IsNotNull(void * pObject, const char * objectName);
+};
