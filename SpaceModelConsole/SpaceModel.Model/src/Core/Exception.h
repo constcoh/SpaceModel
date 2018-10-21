@@ -4,9 +4,9 @@
 
 class Exception {
 private:
-	const char* description;
-	const char* variable;
+	std::string message;
 public:
+	Exception(const std::string &conditionDescription);
 	Exception(const char* variable, const char* description = NULL);
 	std::string getMessage();
 };

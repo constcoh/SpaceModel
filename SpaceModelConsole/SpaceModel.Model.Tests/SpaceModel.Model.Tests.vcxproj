@@ -157,6 +157,9 @@
     <ClInclude Include="src\targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Matrices\Matrix2dTests.cpp" />
+    <ClCompile Include="src\Matrices\Matrix3dTests.cpp" />
+    <ClCompile Include="src\Matrices\Matrix4dTests.cpp" />
     <ClCompile Include="src\Objects\ComplexObjectTests.cpp" />
     <ClCompile Include="src\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

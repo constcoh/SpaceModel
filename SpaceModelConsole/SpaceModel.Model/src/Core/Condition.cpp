@@ -14,3 +14,18 @@ void Condition::IsNotNull(void *pObject, const char * objectName)
 		throw Exception(objectName, "The pointer is NULL");
 	}
 }
+
+
+void Condition::IsTrue(bool condition, const char *conditionDescription)
+{
+	if (condition == false) {
+		throw Exception(conditionDescription);
+	}
+}
+
+void Condition::IsFalse(bool condition, const char *conditionDescription)
+{
+	if (condition) {
+		throw Exception(conditionDescription);
+	}
+}

@@ -16,6 +16,13 @@
     <ClInclude Include="src\Objects\Primitives\Point.h" />
     <ClInclude Include="src\Objects\Primitives\Line.h" />
     <ClInclude Include="src\Objects\Primitives\Triangle.h" />
+    <ClInclude Include="src\Vectors\ExtendedVector2d.h" />
+    <ClInclude Include="src\Vectors\ExtendedVector3d.h" />
+    <ClInclude Include="src\Objects\Primitives\All.h" />
+    <ClInclude Include="src\Objects\All.h" />
+    <ClInclude Include="src\Matrices\Matrix2d.h" />
+    <ClInclude Include="src\Matrices\Matrix3d.h" />
+    <ClInclude Include="src\Matrices\Matrix4d.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Vectors\Vector2d.cpp" />
@@ -31,5 +38,10 @@
     <ClCompile Include="src\Objects\Primitives\Point.cpp" />
     <ClCompile Include="src\Objects\Primitives\Line.cpp" />
     <ClCompile Include="src\Objects\Primitives\Triangle.cpp" />
+    <ClCompile Include="src\Vectors\ExtendedVector2d.cpp" />
+    <ClCompile Include="src\Vectors\ExtendedVector3d.cpp" />
+    <ClCompile Include="src\Matrices\Matrix2d.cpp" />
+    <ClCompile Include="src\Matrices\Matrix3d.cpp" />
+    <ClCompile Include="src\Matrices\Matrix4d.cpp" />
   </ItemGroup>
 </Project>
