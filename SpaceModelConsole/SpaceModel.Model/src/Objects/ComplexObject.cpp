@@ -5,29 +5,40 @@
 
 #pragma region Constructors
 
-ComplexObject::ComplexObject() :BaseObject()
+ComplexObject::ComplexObject() :BaseObject(), transformMatrix(Matrix4d::Identity)
 {
 }
 
 ComplexObject::ComplexObject(
 	const std::vector<ComplexObject*> &childObjects,
 	const std::vector<Primitive*> &primitives)
-	: BaseObject()
+	: BaseObject(), transformMatrix(Matrix4d::Identity)
 {
 	this->_childObjects = childObjects;
 	this->_primitives = primitives;
 }
 
 ComplexObject::ComplexObject(
-	const std::vector<ComplexObject*> &childObjects)
+	const std::vector<ComplexObject*> &childObjects,
+	const std::vector<Primitive*> &primitives,
+	const Matrix4d &transformMatrix)
 	: BaseObject()
+{
+	this->_childObjects = childObjects;
+	this->_primitives = primitives;
+	this->transformMatrix = Matrix4d::Identity;
+}
+
+ComplexObject::ComplexObject(
+	const std::vector<ComplexObject*> &childObjects)
+	: BaseObject(), transformMatrix(Matrix4d::Identity)
 {
 	this->_childObjects = childObjects;
 }
 
 ComplexObject::ComplexObject(
 	const std::vector<Primitive*> &primitives)
-	: BaseObject()
+	: BaseObject(), transformMatrix(Matrix4d::Identity)
 {
 	this->_primitives = primitives;
 }

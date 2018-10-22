@@ -4,6 +4,7 @@
 
 #include "BaseObject.h"
 #include "Primitive.h"
+#include "Matrices\Matrix4d.h"
 
 class ComplexObject :public BaseObject
 {
@@ -11,11 +12,16 @@ private:
 	std::vector<ComplexObject*> _childObjects;
 	std::vector<Primitive*> _primitives;
 public:
+	Matrix4d transformMatrix;
 	//// Constructors:
 	ComplexObject();
 	ComplexObject(
 		const std::vector<ComplexObject*> &childObjects,
 		const std::vector<Primitive*> &primitives);
+	ComplexObject(
+		const std::vector<ComplexObject*> &childObjects,
+		const std::vector<Primitive*> &primitives,
+		const Matrix4d &transformMatrix);
 	ComplexObject(
 		const std::vector<ComplexObject*> &childObjects);
 	ComplexObject(

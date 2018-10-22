@@ -23,6 +23,7 @@
     <ClInclude Include="src\Matrices\Matrix2d.h" />
     <ClInclude Include="src\Matrices\Matrix3d.h" />
     <ClInclude Include="src\Matrices\Matrix4d.h" />
+    <ClInclude Include="src\Matrices\Transform3dFactory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Vectors\Vector2d.cpp" />
@@ -43,5 +44,6 @@
     <ClCompile Include="src\Matrices\Matrix2d.cpp" />
     <ClCompile Include="src\Matrices\Matrix3d.cpp" />
     <ClCompile Include="src\Matrices\Matrix4d.cpp" />
+    <ClCompile Include="src\Matrices\Transform3dFactory.cpp" />
   </ItemGroup>
 </Project>
