@@ -1,49 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="src\Core.h" />
-    <ClInclude Include="src\Vectors\Vector2d.h" />
-    <ClInclude Include="src\Vectors\Vector3d.h" />
-    <ClInclude Include="src\Vectors\Vector4d.h" />
-    <ClInclude Include="src\Vectors\All.h" />
-    <ClInclude Include="src\Objects\BaseObject.h" />
-    <ClInclude Include="src\Objects\Primitive.h" />
-    <ClInclude Include="src\Objects\ComplexObject.h" />
-    <ClInclude Include="src\Core\Condition.h" />
-    <ClInclude Include="src\Core\Exception.h" />
-    <ClInclude Include="src\Extensions\StringExtensions.h" />
-    <ClInclude Include="src\Extensions\VectorExtensions.h" />
-    <ClInclude Include="src\Objects\Primitives\Point.h" />
-    <ClInclude Include="src\Objects\Primitives\Line.h" />
-    <ClInclude Include="src\Objects\Primitives\Triangle.h" />
-    <ClInclude Include="src\Vectors\ExtendedVector2d.h" />
-    <ClInclude Include="src\Vectors\ExtendedVector3d.h" />
-    <ClInclude Include="src\Objects\Primitives\All.h" />
-    <ClInclude Include="src\Objects\All.h" />
-    <ClInclude Include="src\Matrices\Matrix2d.h" />
-    <ClInclude Include="src\Matrices\Matrix3d.h" />
-    <ClInclude Include="src\Matrices\Matrix4d.h" />
-    <ClInclude Include="src\Matrices\Transform3dFactory.h" />
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Vectors\Vector2d.cpp" />
-    <ClCompile Include="src\Core.cpp" />
-    <ClCompile Include="src\Vectors\Vector3d.cpp" />
-    <ClCompile Include="src\Vectors\Vector4d.cpp" />
-    <ClCompile Include="src\Objects\BaseObject.cpp" />
-    <ClCompile Include="src\Objects\Primitive.cpp" />
-    <ClCompile Include="src\Objects\ComplexObject.cpp" />
-    <ClCompile Include="src\Core\Condition.cpp" />
-    <ClCompile Include="src\Core\Exception.cpp" />
-    <ClCompile Include="src\Extensions\StringExtensions.cpp" />
-    <ClCompile Include="src\Objects\Primitives\Point.cpp" />
-    <ClCompile Include="src\Objects\Primitives\Line.cpp" />
-    <ClCompile Include="src\Objects\Primitives\Triangle.cpp" />
-    <ClCompile Include="src\Vectors\ExtendedVector2d.cpp" />
-    <ClCompile Include="src\Vectors\ExtendedVector3d.cpp" />
-    <ClCompile Include="src\Matrices\Matrix2d.cpp" />
-    <ClCompile Include="src\Matrices\Matrix3d.cpp" />
-    <ClCompile Include="src\Matrices\Matrix4d.cpp" />
-    <ClCompile Include="src\Matrices\Transform3dFactory.cpp" />
+    <ClInclude Include="src\Objects\ColorPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\SpacePoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\TemperaturePoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Objects\ColorPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\SpacePoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\TemperaturePoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

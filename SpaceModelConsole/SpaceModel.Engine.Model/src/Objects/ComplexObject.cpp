@@ -109,6 +109,16 @@ std::vector<ComplexObject*>::iterator ComplexObject::getChildIteratorEnd()
 	return this->_childObjects.end();
 }
 
+std::vector<ComplexObject*>::const_iterator ComplexObject::getChildConstIteratorBegin() const
+{
+	return this->_childObjects.cbegin();
+}
+
+std::vector<ComplexObject*>::const_iterator ComplexObject::getChildConstIteratorEnd() const
+{
+	return this->_childObjects.cend();
+}
+
 #pragma endregion
 
 #pragma region Primitives access methods
@@ -163,6 +173,16 @@ std::vector<Primitive*>::iterator ComplexObject::getPrimitiveIteratorBegin()
 std::vector<Primitive*>::iterator ComplexObject::getPrimitiveIteratorEnd()
 {
 	return this->_primitives.end();
+}
+
+std::vector<Primitive*>::const_iterator ComplexObject::getPrimitiveConstIteratorBegin() const
+{
+	return this->_primitives.cbegin();
+}
+
+std::vector<Primitive*>::const_iterator ComplexObject::getPrimitiveConstIteratorEnd() const
+{
+	return this->_primitives.cend();
 }
 
 

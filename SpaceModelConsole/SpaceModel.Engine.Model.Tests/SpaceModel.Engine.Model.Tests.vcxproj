@@ -20,12 +20,12 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{702EC978-AEFC-4A13-8571-52A49211C256}</ProjectGuid>
+    <ProjectGuid>{02A5085E-BBD1-4483-939C-126BB859EBA1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SpaceModelModelTests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectSubType>NativeUnitTestProject</ProjectSubType>
-    <ProjectName>SpaceModel.Model.Tests</ProjectName>
+    <ProjectName>SpaceModel.Engine.Model.Tests</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

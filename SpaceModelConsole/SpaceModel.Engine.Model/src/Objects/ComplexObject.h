@@ -38,6 +38,8 @@ public:
 	void RemoveChilds();
 	std::vector<ComplexObject*>::iterator getChildIteratorBegin();
 	std::vector<ComplexObject*>::iterator getChildIteratorEnd();
+	std::vector<ComplexObject*>::const_iterator getChildConstIteratorBegin() const;
+	std::vector<ComplexObject*>::const_iterator getChildConstIteratorEnd() const;
 
 	//// Primitives access methods:
 	void AddPrimitive(Primitive *primitive);
@@ -47,4 +49,6 @@ public:
 	void RemovePrimitives();
 	std::vector<Primitive*>::iterator getPrimitiveIteratorBegin();
 	std::vector<Primitive*>::iterator getPrimitiveIteratorEnd();
+	std::vector<Primitive*>::const_iterator getPrimitiveConstIteratorBegin() const;
+	std::vector<Primitive*>::const_iterator getPrimitiveConstIteratorEnd() const;
 };

@@ -4,4 +4,5 @@
 class Primitive : public BaseObject {
 public:
 	Primitive();
+	virtual const char *GetPrimitiveName() const;
 };

@@ -1,5 +1,6 @@
-#include "3DEngine.h"
-
+#include "jsonTest.h"
 int main() {
+	mainSaverTest();
+	mainLoaderTest();
 	return 0;
 }
