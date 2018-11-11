@@ -1,6 +1,9 @@
 #include "jsonTest.h"
-int main() {
-	mainSaverTest();
-	mainLoaderTest();
-	return 0;
+#include "testQt.h"
+
+int main(int argc, char **argv) {
+	//mainSaverTest();
+	//mainLoaderTest();
+	return mainQt(argc, argv);
+	////return ;
 }

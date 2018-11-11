@@ -75,7 +75,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)SpaceModel.UI\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -83,7 +83,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)SpaceModel.UI\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -93,7 +93,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)SpaceModel.UI\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -107,7 +107,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)\SpaceModel.Engine\src;$(SolutionDir)SpaceModel.Model.JsonLoader\src;$(SolutionDir)SpaceModel.Model\src;$(SolutionDir)SpaceModel.Engine.Model\src;$(SolutionDir)SpaceModel.UI\src;$(SolutionDir)lib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -129,6 +129,9 @@
     </ProjectReference>
     <ProjectReference Include="..\SpaceModel.Model\SpaceModel.Model.vcxproj">
       <Project>{ce47d1e1-5210-4f67-b31b-2a6a90d3a3d6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SpaceModel.UI\SpaceModel.UI.vcxproj">
+      <Project>{f3dbd3a6-320f-4719-ba03-678d829d666d}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

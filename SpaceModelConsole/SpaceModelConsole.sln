@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpaceModel.Model.JsonLoader
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpaceModel.Model", "SpaceModel.Model\SpaceModel.Model.vcxproj", "{CE47D1E1-5210-4F67-B31B-2A6A90D3A3D6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpaceModel.UI", "SpaceModel.UI\SpaceModel.UI.vcxproj", "{F3DBD3A6-320F-4719-BA03-678D829D666D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -73,6 +75,14 @@ Global
 		{CE47D1E1-5210-4F67-B31B-2A6A90D3A3D6}.Release|x64.Build.0 = Release|x64
 		{CE47D1E1-5210-4F67-B31B-2A6A90D3A3D6}.Release|x86.ActiveCfg = Release|Win32
 		{CE47D1E1-5210-4F67-B31B-2A6A90D3A3D6}.Release|x86.Build.0 = Release|Win32
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Debug|x64.ActiveCfg = Debug|x64
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Debug|x64.Build.0 = Debug|x64
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Debug|x86.ActiveCfg = Debug|Win32
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Debug|x86.Build.0 = Debug|Win32
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Release|x64.ActiveCfg = Release|x64
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Release|x64.Build.0 = Release|x64
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Release|x86.ActiveCfg = Release|Win32
+		{F3DBD3A6-320F-4719-BA03-678D829D666D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
