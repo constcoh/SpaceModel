@@ -87,6 +87,15 @@ double Vector3d::scalarMult(const Vector3d& vector) const
 	return x*vector.x + y*vector.y + z*vector.z;
 }
 
+Vector3d Vector3d::vectorMult(const Vector3d& vector) const
+{
+	return Vector3d(
+		y*vector.z - z*vector.y,
+		-(x*vector.z - z*vector.x),
+		x*vector.y - y*vector.x);
+}
+
+
 double Vector3d::length() const
 {
 	return sqrt(x*x + y*y + z*z);
@@ -95,4 +104,10 @@ double Vector3d::length() const
 double Vector3d::length2() const
 {
 	return x*x + y*y + z*z;
+}
+
+Vector3d Vector3d::normal() const
+{
+	double length = this->length();
+	return Vector3d(x / length, y / length, z / length);
 }

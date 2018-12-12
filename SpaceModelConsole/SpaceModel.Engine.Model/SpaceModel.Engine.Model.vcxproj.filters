@@ -26,6 +26,9 @@
     <ClInclude Include="src\Matrices\Transform3dFactory.h" />
     <ClInclude Include="src\Core\Color.h" />
     <ClInclude Include="src\Core\Cast.h" />
+    <ClInclude Include="src\Core\EventBus\Event.h" />
+    <ClInclude Include="src\Core\EventBus\EventBus.h" />
+    <ClInclude Include="src\Cameras\camera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Vectors\Vector2d.cpp" />
@@ -48,5 +51,8 @@
     <ClCompile Include="src\Matrices\Matrix4d.cpp" />
     <ClCompile Include="src\Matrices\Transform3dFactory.cpp" />
     <ClCompile Include="src\Core\Color.cpp" />
+    <ClCompile Include="src\Core\EventBus\EventBus.cpp" />
+    <ClCompile Include="src\Core\EventBus\Event.cpp" />
+    <ClCompile Include="src\Cameras\camera.cpp" />
   </ItemGroup>
 </Project>

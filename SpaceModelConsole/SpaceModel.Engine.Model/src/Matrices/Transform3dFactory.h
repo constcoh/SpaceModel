@@ -18,4 +18,9 @@ public:
 		const double &sx,
 		const double &sy,
 		const double &sz);
+
+	static Matrix4d TransformMatrix(
+		const Vector3d &front,
+		const Vector3d &up,
+		const Vector3d &position);
 };

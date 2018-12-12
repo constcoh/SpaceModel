@@ -26,6 +26,8 @@ public:
 	Vector3d operator*(const double arg) const;
 
 	double scalarMult(const Vector3d& vector) const;
+	Vector3d vectorMult(const Vector3d& vector) const;
 	double length() const;
 	double length2() const;
+	Vector3d normal() const;
 };

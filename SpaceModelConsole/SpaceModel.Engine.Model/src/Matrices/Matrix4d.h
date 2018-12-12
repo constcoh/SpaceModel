@@ -25,9 +25,11 @@ public:
 	const Matrix4d& operator*=(const Matrix4d &matrix);
 	Matrix4d operator*(const Matrix4d &matrix) const;
 	Vector4d operator*(const Vector4d &vector) const;
+	Vector3d operator*(const Vector3d &vector) const;
 	ExtendedVector3d operator*(const ExtendedVector3d &vector) const;
 
 	// vector = M * vector
+	void ApplyMultToVector(Vector3d &vector) const;
 	void ApplyMultToVector(Vector4d &vector) const;
 	void ApplyMultToVector(ExtendedVector3d &vector) const;
 

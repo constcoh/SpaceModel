@@ -19,10 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Cameras\camera.h" />
     <ClInclude Include="src\Core.h" />
     <ClInclude Include="src\Core\Cast.h" />
     <ClInclude Include="src\Core\Color.h" />
     <ClInclude Include="src\Core\Condition.h" />
+    <ClInclude Include="src\Core\EventBus\Event.h" />
+    <ClInclude Include="src\Core\EventBus\EventBus.h" />
     <ClInclude Include="src\Core\Exception.h" />
     <ClInclude Include="src\Extensions\StringExtensions.h" />
     <ClInclude Include="src\Extensions\VectorExtensions.h" />
@@ -46,9 +49,14 @@
     <ClInclude Include="src\Vectors\Vector4d.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Cameras\camera.cpp" />
     <ClCompile Include="src\Core.cpp" />
     <ClCompile Include="src\Core\Color.cpp" />
     <ClCompile Include="src\Core\Condition.cpp" />
+    <ClCompile Include="src\Core\EventBus\Event.cpp" />
+    <ClCompile Include="src\Core\EventBus\EventBus.cpp">
+      <FileType>CppCode</FileType>
+    </ClCompile>
     <ClCompile Include="src\Core\Exception.cpp" />
     <ClCompile Include="src\Extensions\StringExtensions.cpp" />
     <ClCompile Include="src\Matrices\Matrix2d.cpp" />
@@ -92,7 +100,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">

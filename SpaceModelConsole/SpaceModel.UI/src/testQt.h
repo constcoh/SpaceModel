@@ -1,3 +1,3 @@
 #pragma once
 
-int mainQt(int argc, char **argv);
+int testQt(int argc, char *argv[]);

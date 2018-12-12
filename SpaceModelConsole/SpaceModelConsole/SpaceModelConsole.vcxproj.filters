@@ -23,5 +23,8 @@
     <ClInclude Include="jsonTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="eventBusTests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

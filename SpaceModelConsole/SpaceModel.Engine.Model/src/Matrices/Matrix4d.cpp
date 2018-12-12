@@ -71,6 +71,15 @@ Vector4d Matrix4d::operator*(const Vector4d &vector) const
 		a41*vector.x + a42*vector.y + a43*vector.z + a44*vector.w);
 }
 
+Vector3d Matrix4d::operator*(const Vector3d &vector) const
+{
+	double newX = a11*vector.x + a12*vector.y + a13*vector.z + a14;
+	double newY = a21*vector.x + a22*vector.y + a23*vector.z + a24;
+	double newZ = a31*vector.x + a32*vector.y + a33*vector.z + a34;
+	double newW = a41*vector.x + a42*vector.y + a43*vector.z + a44;
+	return Vector3d(newX / newW, newY / newW, newZ / newW);
+}
+
 ExtendedVector3d Matrix4d::operator*(const ExtendedVector3d &vector) const
 {
 	return ExtendedVector3d(
@@ -81,6 +90,17 @@ ExtendedVector3d Matrix4d::operator*(const ExtendedVector3d &vector) const
 }
 
 // vector = M * vector
+void Matrix4d::ApplyMultToVector(Vector3d &vector) const
+{
+	double newX = a11*vector.x + a12*vector.y + a13*vector.z + a14;
+	double newY = a21*vector.x + a22*vector.y + a23*vector.z + a24;
+	double newZ = a31*vector.x + a32*vector.y + a33*vector.z + a34;
+	double newW = a41*vector.x + a42*vector.y + a43*vector.z + a44;
+	vector.x = newX/newW;
+	vector.y = newY/newW;
+	vector.z = newZ/newW;
+}
+
 void Matrix4d::ApplyMultToVector(Vector4d &vector) const
 {
 	double newX = a11*vector.x + a12*vector.y + a13*vector.z + a14*vector.w;
